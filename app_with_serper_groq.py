@@ -297,5 +297,6 @@ st.markdown("""
 <div style="text-align: center; color: #666; font-size: 0.9rem;">
     <p>✨ Développé avec Streamlit | 🔍 Serper API | 🤖 Groq AI (Llama 3)</p>
     <p>🚀 100% Gratuit et Open Source</p>
+    <p> développé par GUENIDI Yassine</p>
 </div>
 """, unsafe_allow_html=True)
