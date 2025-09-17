@@ -232,64 +232,64 @@ if search_clicked and query:
 
             # Section feedback
             st.divider()
-            st.markdown("### 📊 Feedback")
-            col_f1, col_f2, col_f3 = st.columns(3)
-            with col_f1:
-                if st.button("👍 Excellent", use_container_width=True):
-                    st.success("Merci pour votre feedback !")
-            with col_f2:
-                if st.button("😐 Moyen", use_container_width=True):
-                    st.info("Nous améliorons continuellement !")
-            with col_f3:
-                if st.button("👎 Insatisfait", use_container_width=True):
-                    st.warning("Désolé, nous ferons mieux !")
+            # st.markdown("### 📊 Feedback")
+            # col_f1, col_f2, col_f3 = st.columns(3)
+            # with col_f1:
+            #     if st.button("👍 Excellent", use_container_width=True):
+            #         st.success("Merci pour votre feedback !")
+            # with col_f2:
+            #     if st.button("😐 Moyen", use_container_width=True):
+            #         st.info("Nous améliorons continuellement !")
+            # with col_f3:
+            #     if st.button("👎 Insatisfait", use_container_width=True):
+            #         st.warning("Désolé, nous ferons mieux !")
 
         else:
             st.error("❌ Aucun résultat trouvé. Vérifiez votre clé Serper API.")
 
 # Section d'instructions
-with st.expander("📋 Guide d'installation - GROQ GRATUIT", expanded=True):
-    st.markdown("""
-    ## 🚀 Configuration GRATUITE - Groq API
-
-    ### 1. Obtenir Groq API Key (GRATUIT)
-
-    **👉 [https://console.groq.com](https://console.groq.com)**
-
-    - ✅ Completement gratuit
-    - ✅ Très rapide (modèles Llama 3)
-    - ✅ 1000+ requêtes gratuites
-    - ✅ Pas de carte de crédit requise
-
-    **Steps:**
-    1. Allez sur [console.groq.com](https://console.groq.com)
-    2. Connectez-vous avec Google/GitHub
-    3. Allez dans "API Keys"
-    4. Cliquez "Create API Key"
-    5. Copiez la clé générée
-
-    ### 2. Serper API (GRATUIT)
-
-    **👉 [https://serper.dev](https://serper.dev)**
-
-    - 1000 requêtes/mois gratuit
-    - Clé instantanée après inscription
-
-    ### 3. Déploiement Streamlit Cloud
-
-    **Secrets:**
-    ```toml
-    SERPER_API_KEY = "votre_cle_serper"
-    GROQ_API_KEY = "votre_cle_groq"
-    ```
-
-    **requirements.txt:**
-    ```txt
-    streamlit
-    requests
-    python-dotenv
-    ```
-    """)
+# with st.expander("📋 Guide d'installation - GROQ GRATUIT", expanded=True):
+#     st.markdown("""
+#     ## 🚀 Configuration GRATUITE - Groq API
+#
+#     ### 1. Obtenir Groq API Key (GRATUIT)
+#
+#     **👉 [https://console.groq.com](https://console.groq.com)**
+#
+#     - ✅ Completement gratuit
+#     - ✅ Très rapide (modèles Llama 3)
+#     - ✅ 1000+ requêtes gratuites
+#     - ✅ Pas de carte de crédit requise
+#
+#     **Steps:**
+#     1. Allez sur [console.groq.com](https://console.groq.com)
+#     2. Connectez-vous avec Google/GitHub
+#     3. Allez dans "API Keys"
+#     4. Cliquez "Create API Key"
+#     5. Copiez la clé générée
+#
+#     ### 2. Serper API (GRATUIT)
+#
+#     **👉 [https://serper.dev](https://serper.dev)**
+#
+#     - 1000 requêtes/mois gratuit
+#     - Clé instantanée après inscription
+#
+#     ### 3. Déploiement Streamlit Cloud
+#
+#     **Secrets:**
+#     ```toml
+#     SERPER_API_KEY = "votre_cle_serper"
+#     GROQ_API_KEY = "votre_cle_groq"
+#     ```
+#
+#     **requirements.txt:**
+#     ```txt
+#     streamlit
+#     requests
+#     python-dotenv
+#     ```
+#     """)
 
 # Footer
 st.divider()
